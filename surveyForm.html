@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">HTML CLUB Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="">Name
+        <input placeholder="Enter your name" id="name" type="text" name="" value="" required />
+      </label>
+
+      <label id="email-label" for="">Email
+        <input placeholder="Enter your Email" id="email" type="email" name="" value="" required>
+      </label>
+
+      <label id="number-label" for="">Age(optional)
+        <input placeholder="Age" id="number" type="number" name="" value="" required min="10" max="99">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="">Which option best describes your current role?
+
+        <select id="dropdown" class="" name="">
+
+          <option value="">Select current role</option>
+          <option value="">Student</option>
+          <option value="">Full Time Job</option>
+          <option value="">Full Time Learner</option>
+          <option value="">Prefer not to say</option>
+          <option value="">Other</option>
+
+        </select>
+
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="">Would you recommend HTML CLUB to a friend?
+        <input type="radio" name="radio-button" value="Definitely"> Definitely
+        <input type="radio" name="radio-button" value="Maybe"> Maybe
+        <input type="radio" name="radio-button" value="Maybe"> Not sure
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="">What is your favorite feature of HTML CLUB?
+
+        <select class="" name="">
+          <option value="">Select an option</option>
+          <option value="">Challanges</option>
+          <option value="">Projects</option>
+          <option value="">Community</option>
+          <option value="">Open source</option>
+        </select>
+
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="">What would you like to see improved? (Check all that apply)
+        <input type="checkbox" name="" value="front">Front-end Projects
+        <input type="checkbox" name="" value="back">Back-end Projects
+        <input type="checkbox" name="" value="data">Data Visualization
+        <input type="checkbox" name="" value="challange">Challenges
+        <input type="checkbox" name="" value="open-source">Open Source Community
+        <input type="checkbox" name="" value="gitter">Gitter help rooms
+        <input type="checkbox" name="" value="city">City Meetups
+        <input type="checkbox" name="" value="vidoes">Videos
+        <input type="checkbox" name="" value="wiki">Wiki
+        <input type="checkbox" name="" value="forum">Forum
+        <input type="checkbox" name="" value="additional">Additional Courses
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="">Any comments or suggestions?
+        <textarea name="name" rows="8" cols="80"></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <button id="submit" type="submit" name="button">Submits</button>
+    </fieldset>
+
+  </form>
+
+</body>
+
+</html>
